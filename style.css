@@ -25,12 +25,24 @@ a {
 a:hover {
     color: red;
 }
-
+/*when you click on the link it will flash the color*/
+a:active{
+    color: green;
+}
+a:visited{
+    color:black;
+}
 .container {
     width: 80%;
     margin: auto;
 }
+.button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
 
+}
 .box-1 {
     background-color: #333;
     color: #fff;
@@ -70,4 +82,25 @@ a:hover {
 
 .categories ul {
     list-style: square;
+}
+.categories li{
+    padding-bottom: 4px;
+    border-bottom: dotted 1px #333;
+    /* can use an image to add before each list
+    list-style-image: url('path');
+    */
+}
+.my-form{
+    padding: 20px;
+
+}
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+.my-form label{
+    display: block; /*so that labels will have their own lines*/
+}
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
 }
